@@ -41,3 +41,38 @@ console.log('add a = b:');
 let answer = add(5, 7); // return 12
 
 console.log('The answer is:', answer);
+
+let helloAnswer = hello();
+console.log('Hello?', helloAnswer);
+
+function returnEarly() {
+  return 5;
+
+  // This won't run in the function if it is after the return!
+  console.log('Return This!!!');
+}
+
+returnEarly();
+
+let number = prompt('what is your favorite number?');
+console.log('The number in the prompt is:', number);
+
+// pre-built functions in JS
+// the MATH CLASS
+
+console.log(Math.PI);
+console.log(Math.random()); // math.random() is a random number from 0 to 1
+
+// Create a random number from 0 to 10
+Math.random() * 10;
+
+// 0.. 1
+// 0*10 ... 1 * 10
+// 0.... 10
+
+// Create a random number from 0 - 2453
+Math.random() * 2453;
+
+console.log('Floor', Math.floor(4.99));
+
+console.log('Random Whole #:', Math.floor(Math.random() * 100));
